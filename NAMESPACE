@@ -1,0 +1,2 @@
+export(gcl, tcl, sgcl,acc.eval, ci.eval, cindex, cv52, cvcomp, gain, gainr,
+       hanley, loocv, cv) 
