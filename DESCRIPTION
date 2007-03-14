@@ -1,7 +1,7 @@
 Package: gcl
 Type: Package
 Title: Compute a fuzzy rules or tree classifier from data
-Version: 1.06.4
+Version: 1.06.5
 Date: 2007-03-14
 Author: Staal A. Vinterbo
 Maintainer: complain to <staal@dsg.harvard.edu>
@@ -12,4 +12,4 @@ Description: gcl  is a function that computes a fuzzy rules
  gcl  returns  another  R function that implements the found classifier.
 License: GPL Version 2
 URL: http://www.r-project.org, http://www.mit.edu/~sav/fuzzy/
-Packaged: Sat Mar 17 13:55:33 2007; staal
+Packaged: Tue Jun 19 09:56:49 2007; staal

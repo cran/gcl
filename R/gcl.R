@@ -2,7 +2,7 @@
 function (df, nlev = 3, filter = 1.2, multi = NULL, gcl.verbose = T, 
     ...) 
 {
-    gcl.version <- "1.06.4"
+    gcl.version <- "1.06.5"
     if (gcl.verbose) 
         cat("gcl", gcl.version, ": Creating Fuzzy Rules classifier with", 
             nlev, "fuzzy levels.\n")

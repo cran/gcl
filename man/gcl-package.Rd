@@ -12,7 +12,7 @@ GCL: A package for Computing fuzzy rules or tree classifiers from numeric data
 \tabular{ll}{
 Package: \tab gcl\cr
 Type: \tab Package\cr
-Version: \tab 1.06.4\cr
+Version: \tab 1.06.5\cr
 License: \tab GPL Version 2\cr
 URL: \tab \url{http://www.r-project.org},\cr
  \tab \url{http://www.mit.edu/~sav/fuzzy/latest/}\cr

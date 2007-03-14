@@ -1,6 +1,6 @@
 `greedySC` <-
 function (sets, cost = rep(1, nrow(sets)), mit = nrow(sets) * 
-    5, mono = T) 
+    5, mono = T, exact = F) 
 {
     u <- rep(T, ncol(sets))
     m <- 1:ncol(sets)
@@ -9,13 +9,26 @@ function (sets, cost = rep(1, nrow(sets)), mit = nrow(sets) *
     it <- 0
     while (sum(u) > 0 && length(avail) > 0 && it < mit) {
         it <- it + 1
-        a <- 0
+        if (exact) 
+            a <- Inf
+        else a <- 0
         b <- 0
         for (i in avail) {
-            d <- sum(sets[i, u])/cost[i]
-            if (d >= a) {
-                a <- d
-                b <- i
+            if (exact) {
+                d <- sum(sets[i, !u])/sum(sets[i, u])
+                if (is.nan(d)) 
+                  d <- Inf
+                if (d <= a) {
+                  a <- d
+                  b <- i
+                }
+            }
+            else {
+                d <- sum(sets[i, u])/cost[i]
+                if (d >= a) {
+                  a <- d
+                  b <- i
+                }
             }
         }
         sol <- c(sol, b)

@@ -5,7 +5,7 @@
 # Description:  Example file for gcl package
 # Author:       Staal Vinterbo
 # Created:      Thu Nov 10 23:01:35 2005
-# Modified:     Thu Mar 15 23:20:58 2007 (Staal Vinterbo) staal@peep
+# Modified:     Tue Jun 19 09:55:24 2007 (Staal Vinterbo) staal@peep
 # Language:     ESS[S]
 # Package:      N/A
 # Status:       Experimental
@@ -29,7 +29,7 @@
 ################################################################################
 
 
-# library(gcl)
+library(gcl)
 #gcldemo <- function() {
   df <-
     structure(list(V1 = c(0.628, 0.317, 0.275, 0.458, 0.926, 0.456, 
